@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开始学习 - 小学生英语学习乐园</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>📚 英语单词学习</h1>
+            <div class="user-info">
+                <span class="score">积分: <span id="userScore">0</span></span>
+                <button id="checkInBtn" class="check-in-btn">📅 打卡</button>
+            </div>
+        </header>
+
+        <!-- 学习信息 -->
+        <div class="learning-info">
+            <p id="learningTitle" class="learning-title">译林版 一年级 上学期</p>
+            <div class="progress">
+                <span id="progressText">单词 1/20</span>
+            </div>
+        </div>
+
+        <!-- 学习卡片 -->
+        <div class="learning-container">
+            <div class="word-card">
+                <!-- 单词展示 -->
+                <div class="word-display" id="wordDisplay">cat</div>
+                <div class="word-phonics" id="wordPhonics">/kæt/</div>
+                <div class="word-meaning" id="wordMeaning">猫</div>
+
+                <!-- 音频按钮 -->
+                <button id="audioBtn" class="audio-btn">🔊 听发音</button>
+
+                <!-- 拼写输入 -->
+                <input type="text" id="spellingInput" class="spelling-input" placeholder="请输入单词拼写" autocomplete="off">
+
+                <!-- 结果反馈 -->
+                <div id="resultMessage" class="result-message"></div>
+            </div>
+
+            <!-- 导航按钮 -->
+            <div class="navigation">
+                <button id="backBtn" class="navigation-btn">🔙 返回首页</button>
+                <button id="nextBtn" class="navigation-btn" style="display: none;">➡️ 下一个单词</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/words.js"></script>
+    <script src="js/learn.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

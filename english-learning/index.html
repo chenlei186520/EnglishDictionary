@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小学生英语学习乐园</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>🐿️ 小学生英语学习乐园</h1>
+            <div class="user-info">
+                <span class="score">积分: <span id="userScore">0</span></span>
+                <button id="galleryBtn" class="gallery-btn">📖 图鉴</button>
+                <button id="checkInBtn" class="check-in-btn">📅 打卡</button>
+            </div>
+        </header>
+
+        <!-- 主体内容 -->
+        <main class="main">
+            <section class="welcome-section">
+                <h2>欢迎来到英语学习乐园！</h2>
+                <p>选择你的学习材料，开始愉快的英语学习之旅吧！</p>
+            </section>
+
+            <section class="selection-section">
+                <div class="select-group">
+                    <label for="textbook">📚 选择教材</label>
+                    <select id="textbook" class="select-box">
+                        <option value="yilin">译林版</option>
+                        <option value="pep">人教版</option>
+                        <option value="oxford">牛津版</option>
+                    </select>
+                </div>
+
+                <div class="select-group">
+                    <label for="grade">👶 选择年级</label>
+                    <select id="grade" class="select-box">
+                        <option value="1">一年级</option>
+                        <option value="2">二年级</option>
+                        <option value="3">三年级</option>
+                        <option value="4">四年级</option>
+                        <option value="5">五年级</option>
+                        <option value="6">六年级</option>
+                    </select>
+                </div>
+
+                <div class="select-group">
+                    <label for="semester">📅 选择学期</label>
+                    <select id="semester" class="select-box">
+                        <option value="1">上学期</option>
+                        <option value="2">下学期</option>
+                    </select>
+                </div>
+
+                <button id="startBtn" class="start-btn">🚀 开始学习</button>
+            </section>
+
+            <!-- 学习卡片预览 -->
+            <section class="preview-section">
+                <h3>📖 学习特色</h3>
+                <div class="features">
+                    <div class="feature-card">
+                        <img src="images/phonics.png" alt="自然拼读">
+                        <h4>自然拼读</h4>
+                        <p>通过自然拼读学习单词</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/audio.png" alt="音频播放">
+                        <h4>音频播放</h4>
+                        <p>听标准发音学习</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/game.png" alt="游戏学习">
+                        <h4>游戏学习</h4>
+                        <p>边玩边学更有趣</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/reward.png" alt="积分奖励">
+                        <h4>积分奖励</h4>
+                        <p>完成学习获得奖励</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 底部 -->
+        <footer class="footer">
+            <p>&copy; 2026 小学生英语学习乐园 | 快乐学习，轻松成长</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>

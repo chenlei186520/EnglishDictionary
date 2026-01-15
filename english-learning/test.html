@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>功能测试</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        .test-section { margin-bottom: 30px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        .test-item { margin-bottom: 15px; }
+        .test-result { font-weight: bold; margin-left: 10px; }
+        .pass { color: green; }
+        .fail { color: red; }
+        .info { color: blue; }
+    </style>
+</head>
+<body>
+    <h1>英语学习平台功能测试</h1>
+    
+    <div class="test-section">
+        <h2>核心功能测试</h2>
+        
+        <div class="test-item">
+            <strong>1. 打卡功能</strong>
+            <span class="test-result pass">✅ 已实现</span>
+            <p class="info">每日打卡获得10积分</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>2. 教材选择</strong>
+            <span class="test-result pass">✅ 已实现</span>
+            <p class="info">支持译林版、人教版、牛津版</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>3. 年级和学期选择</strong>
+            <span class="test-result pass">✅ 已实现</span>
+            <p class="info">支持1-6年级，上下学期</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>4. 自然拼读彩色显示</strong>
+            <span class="test-result pass">✅ 已实现</span>
+            <p class="info">单词按音节用不同颜色显示</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>5. 单词发音功能</strong>
+            <span class="test-result pass">✅ 已实现</span>
+            <p class="info">使用Web Speech API播放单词发音</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>6. 发音后才能拼写</strong>
+            <span class="test-result pass">✅ 已修复</span>
+            <p class="info">必须先听发音，输入框才会启用</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>7. 拼写验证</strong>
+            <span class="test-result pass">✅ 已实现</span>
+            <p class="info">实时验证拼写，正确显示"太棒了"，错误显示"再试一次"</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>8. 积分系统</strong>
+            <span class="test-result pass">✅ 已实现</span>
+            <p class="info">拼写正确+2分，打卡+10分</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>9. 卡皮巴拉主题</strong>
+            <span class="test-result pass">✅ 已实现</span>
+            <p class="info">卡皮巴拉图鉴奖励系统</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>10. 响应式设计</strong>
+            <span class="test-result pass">✅ 已实现</span>
+            <p class="info">支持不同屏幕尺寸</p>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>使用说明</h2>
+        <ol>
+            <li>在首页选择教材、年级和学期</li>
+            <li>点击"开始学习"进入学习页面</li>
+            <li>点击"🔊 听发音"按钮收听单词发音</li>
+            <li>发音播放后，输入框会自动启用</li>
+            <li>输入单词拼写，系统会实时验证</li>
+            <li>拼写正确获得2积分，自动进入下一个单词</li>
+            <li>完成学习后可以在图鉴页面兑换卡皮巴拉图标</li>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡皮巴拉图鉴 - 小学生英语学习乐园</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 图鉴特定样式 */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gallery-item {
+            font-size: 5rem;
+            margin-bottom: 15px;
+        }
+        
+        .gallery-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        
+        .gallery-description {
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+        
+        .gallery-cost {
+            font-size: 1.1rem;
+            color: #f59e0b;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .gallery-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-btn:hover {
+            background: #5554ba;
+            transform: translateY(-2px);
+        }
+        
+        .gallery-btn.disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+        
+        .gallery-btn.disabled:hover {
+            background: #9ca3af;
+            transform: none;
+        }
+        
+        .gallery-btn.owned {
+            background: #10b981;
+        }
+        
+        .gallery-btn.owned:hover {
+            background: #059669;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>🐿️ 卡皮巴拉图鉴</h1>
+            <div class="user-info">
+                <span class="score">积分: <span id="userScore">0</span></span>
+                <button id="backBtn" class="navigation-btn">🔙 返回首页</button>
+            </div>
+        </header>
+
+        <!-- 主体内容 -->
+        <main class="main">
+            <section class="welcome-section">
+                <h2>收集可爱的卡皮巴拉图标！</h2>
+                <p>使用你的积分兑换精美的卡皮巴拉图标，丰富你的图鉴收藏！</p>
+            </section>
+
+            <!-- 图鉴展示 -->
+            <div id="galleryContainer" class="gallery-container">
+                <!-- 图鉴内容将通过JavaScript动态生成 -->
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
